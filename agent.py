@@ -66,6 +66,7 @@ New question: {input}
 {agent_scratchpad}"""
 
 #Set up a prompt template
+#custom prompt template to take care of all the intermediate steps for the prompt such as thoughts, tools, etc.
 class CustomPromptTemplate(StringPromptTemplate):
     # The template to use
     template: str
